@@ -11,7 +11,7 @@ The intended use case is as a pre-commit hook or build (CI/CD) task.
 
 Install the package with
 
-`npm install tslint-no-getElementById --save-dev` (or `yarn add tslint-no-focused --save-dev`).
+`npm install tslint-no-getElementById --save-dev` (or `yarn add tslint-no-getElementById --save-dev`).
 
 Then add the following to your `tslint.json`:
 
