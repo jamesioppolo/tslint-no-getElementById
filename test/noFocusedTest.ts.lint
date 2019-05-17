@@ -1,0 +1,6 @@
+function() {
+    const element = document.getElementById('');
+}
+~~~~~~~~~~~~ [no-getElementById]
+
+[no-getElementById]: calls to document.getElementById are not allowed

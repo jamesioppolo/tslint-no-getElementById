@@ -1,0 +1,37 @@
+{
+  "name": "tslint-no-getElementById",
+  "version": "0.1.0",
+  "description": "Custom TSLint plugin to check for the presence of document.getElementById",
+  "main": "dist/index.js",
+  "repository": "https://github.com/jamesioppolo/tslint-no-getElementById.git",
+  "author": "James Ioppolo <james.ioppolo@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "prepublishOnly": "npm run lint && npm run build && npm run test",
+    "build": "tsc",
+    "tslint:fix": "tslint -c tslint.json 'src/**/*.ts' --fix",
+    "tslint:check": "tslint -c tslint.json 'src/**/*.ts'",
+    "prettier:fix": "prettier --config prettier.config.js --write 'src/**/*ts'",
+    "prettier:check": "prettier --config prettier.config.js --list-different 'src/**/*ts'",
+    "lint": "npm run tslint:check && npm run prettier:check",
+    "fix": "npm run tslint:fix && npm run prettier:fix",
+    "test": "tslint --test test"
+  },
+  "keywords": [
+    "jest",
+    "tslint",
+    "typescript",
+    "mocha",
+    "chai"
+  ],
+  "peerDependencies": {
+    "tslint": ">=5.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^10.0.5",
+    "prettier": "^1.12.1",
+    "tslint": "^5.10.0",
+    "typescript": "^2.8.3"
+  }
+}
