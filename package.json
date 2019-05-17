@@ -1,9 +1,9 @@
 {
-  "name": "tslint-no-getElementById",
-  "version": "0.1.0",
+  "name": "tslint-no-getelementbyid",
+  "version": "0.2.0",
   "description": "Custom TSLint plugin to check for the presence of document.getElementById",
   "main": "dist/index.js",
-  "repository": "https://github.com/jamesioppolo/tslint-no-getElementById.git",
+  "repository": "https://github.com/jamesioppolo/tslint-no-getelementbyid.git",
   "author": "James Ioppolo <james.ioppolo@gmail.com>",
   "license": "MIT",
   "private": false,
@@ -12,10 +12,8 @@
     "build": "tsc",
     "tslint:fix": "tslint -c tslint.json 'src/**/*.ts' --fix",
     "tslint:check": "tslint -c tslint.json 'src/**/*.ts'",
-    "prettier:fix": "prettier --config prettier.config.js --write 'src/**/*ts'",
-    "prettier:check": "prettier --config prettier.config.js --list-different 'src/**/*ts'",
-    "lint": "npm run tslint:check && npm run prettier:check",
-    "fix": "npm run tslint:fix && npm run prettier:fix",
+    "lint": "npm run tslint:check",
+    "fix": "npm run tslint:fix",
     "test": "tslint --test test"
   },
   "keywords": [
@@ -30,7 +28,6 @@
   },
   "devDependencies": {
     "@types/node": "^10.0.5",
-    "prettier": "^1.12.1",
     "tslint": "^5.10.0",
     "typescript": "^2.8.3"
   }

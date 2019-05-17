@@ -3,7 +3,7 @@ import { CallExpression, SourceFile } from 'typescript';
 
 export class Rule extends Rules.AbstractRule {
   public static metadata: IRuleMetadata = {
-    ruleName: 'no-getElementById',
+    ruleName: 'no-getelementbyid',
     description:
       'Disallows `document.getElementById`.',
     optionsDescription: 'Not configurable.',

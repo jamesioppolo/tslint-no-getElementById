@@ -1,6 +1,6 @@
 {
   "rulesDirectory": "../dist",
   "rules": {
-    "no-getElementById": true
+    "no-getelementbyid": true
   }
 }
