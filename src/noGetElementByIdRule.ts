@@ -12,8 +12,8 @@ export class Rule extends Rules.AbstractRule {
     typescriptOnly: true,
   };
 
-  public static FAILURE_STRING = 'Calls to document.getElementById';
-  public static MATCH_REGEX = /^(document.getElementById)\.only)/;
+  public static FAILURE_STRING = 'Calls to document.getElementById are not allowed';
+  public static MATCH_REGEX = /^(document.getElementById)/;
 
   public apply(sourceFile: SourceFile): RuleFailure[] {
     return this.applyWithWalker(
