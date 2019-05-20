@@ -1,6 +1,6 @@
 {
   "name": "tslint-no-getelementbyid",
-  "version": "0.3.0",
+  "version": "0.5.0",
   "description": "Custom TSLint plugin to check for the presence of document.getElementById",
   "main": "dist/index.js",
   "repository": "https://github.com/jamesioppolo/tslint-no-getelementbyid.git",

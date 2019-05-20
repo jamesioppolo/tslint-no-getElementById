@@ -1,4 +1,0 @@
-const element = document.getElementById('test');
-                ~~~~~~~~~~~~~~~~~~~~~~~ [no-getelementbyids]
-
-[no-getelementbyids]: Calls to document.getElementById are not allowed
